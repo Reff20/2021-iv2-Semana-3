@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://www.flaticon.com/svg/vstatic/svg/2502/2502178.svg?token=exp=1618032785~hmac=9f9880b0b7dc6bed6883fb3ddc560db8"
+        type="image/x-icon">
+    <title>Semana 3</title>
+
+</head>
+
+<body>
+
+    <div id="titulo">
+        <h1>Calculando para você!</h1>
+        <p>Aqui você vai encontrar resultados rápidos para algumas questões!</p>
+    </div>
+
+    <!-- *** BLOCO 1 - SECTION 1 e 2 ***-->
+    <div id="bloco1">
+
+        <!-- *** SECTION 1 - Arredondar um num ***-->
+        <section id="arredondar" class="container-fluid padrao">
+
+            <h1>Arredonde um número!</h1>
+            <p>Aqui você coloca um número quebrado e você recebe ele arredondado!</p>
+
+            <div>
+                <input id="inputArredondado" class="input-style" type="number" value="arredondado"
+                    placeholder="ex: 2,8537">
+                <button class="btn-style" id="btnArredondado" value="btnArredondar">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4Arredondado"></h4>
+
+        </section>
+
+        <!-- *** SECTION 2 - Potência do num anterior ***-->
+        <section id="potencia" class="container-fluid padrao">
+
+            <h1>Faça a potência do seu número arredondado</h1>
+            <p>Digite aqui o exponente da sua potência (O número elevado / Pode ser número "quebrado"!)</p>
+
+            <div>
+                <input id="inputPotencia" class="input-style" type="number" placeholder="ex: 8">
+                <button onclick="pot()" class="btn-style" id="btnPotencia" value="btnPotencia">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4Potencia"></h4>
+            <h4 class="h4" id="h4Potencia2"></h4>
+
+        </section>
+    </div>
+
+    <!-- *** BLOCO 2 - SECTION 3 ***-->
+    <div id="bloco2">
+
+        <!-- *** SECTION 2 - Calculos do circulo ***-->
+        <section id="circulo" class="container-fluid padrao">
+
+            <!-- *** Calcular Circunferência *** -->
+            <h1>Calcule a circunferência de um circulo</h1>
+            <p>Digite aqui o valor raio</p>
+            <div>
+                <input id="inputCircunferencia" class="input-style" type="number" placeholder="ex: 3,1"
+                    value="circunferencia">
+                <button class="btn-style" id="btnCircunferencia" value="btnCircunferencia">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4Circunferencia"></h4>
+            <h4 class="h4" id="h4Circunferencia1"></h4>
+
+            <!-- *** Calcular Área *** -->
+            <h1>Calcule a área de um circulo</h1>
+            <p>Digite aqui o valor do raio</p>
+            <div>
+                <input id="inputAreaCirculo" class="input-style" type="number" placeholder="ex: 4" value="areaCirculo">
+                <button class="btn-style" id="bntAreaCirculo" value="btnAreaCirculo">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4AreaCirculo"></h4>
+            <h4 class="h4" id="h4AreaCirculo1"></h4>
+
+        </section>
+    </div>
+
+
+    <!-- *** BLOCO 3 - SECTION 4 ***-->
+    <div id="bloco3">
+
+        <!-- *** SECTION 3 - Calculos do cubo ***-->
+        <section id="cubo" class="container-fluid padrao">
+
+            <!-- *** Calcular Área da Base *** -->
+            <h1>Calcule a área da base de um cubo</h1>
+            <p>Digite aqui o valor da aresta para definir a área da base</p>
+            <div>
+                <input id="inputAreaBaseCubo" class="input-style" type="number" placeholder="ex: 7" value="areaBase">
+                <button class="btn-style" id="btnAreaBase" value="btnAreaBaseCubo">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4AreaBase"></h4>
+
+            <!-- *** Calcular Área total do cubo *** -->
+            <h1>Calcule a área total de um cubo</h1>
+            <p>Digite aqui o valor da área da base</p>
+
+            <div>
+                <input id="inputAreaTotalCubo" class="input-style" type="number" placeholder="ex: 1,777"
+                    value="areaTotal">
+                <button class="btn-style" id="btnAreaTotal" value="btnAreaTotalCubo">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4AreaTotal"></h4>
+
+            <!-- *** Calcular Volume do cubo *** -->
+            <h1>Calcule o volume de um cubo</h1>
+            <p>Digite aqui o valor da aresta do cubo</p>
+
+            <div>
+                <input id="inputVolumeCubo" class="input-style" type="number" placeholder="ex: 4,3" value="volume">
+                <button class="btn-style" id="btnVolume" value="btnVolumeCubo">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4Volume"></h4>
+
+        </section>
+    </div>
+
+    <!-- *** BLOCO 4 - SECTION 5 ***-->
+    <div id="bloco4">
+
+        <!-- *** SECTION 4 - Calculos de logaritimo ***-->
+        <section id="log" class="container-fluid padrao">
+
+            <!-- *** Calcular Log narutal *** -->
+            <h1>Calcule o Log natural de um numero</h1>
+            <p>Digite aqui um valor para calcular seu logarítimo natural</p>
+
+            <div>
+                <input id="inputLog" class="input-style" type="number" placeholder="ex: 9" value="logNatural">
+                <button class="btn-style" id="btnLogNatural" value="btnLog">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4LogNatural"></h4>
+
+
+            <!-- *** Calcular Log na base 10 *** -->
+            <h1>Calcule o Log de um número na base 10</h1>
+            <p>Digite aqui um valor para calcular seu logarítimo na base 10</p>
+
+            <div>
+                <input id="inputLogBase10" class="input-style" type="number" placeholder="ex: 1" value="logBase10">
+                <button class="btn-style" id="btnLogBase10" value="btnLogBase10">Calcular</button>
+            </div>
+
+            <h4 class="h4" id="h4LogBase10"></h4>
+            
+        </section>
+    </div>
+
+
+    <script src="js/bloco1.js"></script>
+    <script src="js/bloco2.js"></script>
+    <script src="js/bloco3.js"></script>
+    <script src="js/bloco4.js"></script>
+</body>
+
+</html>
